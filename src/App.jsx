@@ -23,7 +23,7 @@ const router = createBrowserRouter([
             index: true,
             element: <EventsPage />,
             loader: async () => {
-              const response = await fetch("http://localhost:3000/events");
+              const response = await fetch("http://localhost:8080/events");
 
               if (!response.ok) {
                 // ...
